@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: rgba(255, 217, 0, 0.623)
+        }
+        input,
+        .caret {
+            display: block;
+            transition: 0.8s;
+        }
+
+/*search round */
+        input {
+            background: transparent;
+            border-radius: 100%;
+            box-shadow: 0 0 0 0.25em inset;
+            width: 20px;
+            height: 20px;
+            /* margin-left: 690px; */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+/*search line */
+
+        .caret {
+            background: currentColor;
+            border-radius: 100%;
+            margin-bottom: -15px;
+            /* margin-left: 690px; */
+            width: 0.25em;
+            height: 15px;
+            transform: translate(0, -1em) rotate(-45deg) translate(0, 0.875em);
+            transform-origin: 50% 0;
+        }
+
+/*transition effect icon to bar*/
+        input:focus,
+        input:valid {
+            background: var(--input);
+            border-radius: 0.15em;
+            box-shadow: none;
+            padding: 0.75em 1em;
+            transition-duration: 0.25s;
+            transition-delay: 0.25s;
+            width: 330px;
+            height: 2em;
+
+        }
+
+/*transition effect round cursor*/
+        input:focus+.caret,
+        input:valid+.caret {
+            animation: handleToCaret var(--dur) linear;
+            background: transparent;
+            width: 1px;
+            height: 1.5em;
+            transform: translate(0, -1em) rotate(180deg) translate(7.5em, -0.25em);
+        }
+
+/* search label */
+        label {
+            color: #e3e4e8;
+            overflow: hidden;
+            position: fixed;
+            width: 0;
+            height: 0;
+        }
+        #logosmall{
+          width: 30px;
+          height: 40px;
+        }
+        #searchbox{
+          display: flex;
+          justify-content: flex-end;
+        }
+        .container-fluid{
+          border-bottom: 10%;
+        }
+        a{
+          color: black;
+          text-decoration: none;
+        }
+    #homebody .row .col-md-4{
+      background-color: rgba(160, 118, 14, 0.514);
+      margin: 2%;
+      width: 29.33%;
+      border-radius: 12px;
+    }
+    #navbar a:hover{
+      cursor: pointer;
+      color: snow;
+    }
+    #navbar .col-xl-2:hover{
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    #homebody a:hover{
+      color: black;
+    }
+    i{
+      font-weight: 600;
+    }
+    #homebody .col-md-4{
+      height: 300px;
+    }
+    #footer {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    #homebody a{
+      text-decoration: none;
+    }
+  
+</style>
+</head>
+
+<body>  
+  <!-- starting with top navbar have logo, name and a stylish search button .....be sure to click on search icon -->
+<div class="container-fluid bg-warning">
+  <div class="row" style="display: flex;">
+    <div class="col"><img src="011_doge.png" class="img-fluid" alt="D" id="logosmall"></div>
+    <div class="col" style="font-family: Comic Sans MS; text-align: center;" ><h2>DOGESHOP</h2></div>
+    <div class="col" id="searchbox"><form>
+    <label for="search"></label>
+    <input id="search" type="search" pattern=".*\S.*" required="" placeholder="search">
+    <span class="caret"></span>
+</form></div>
+</div>
+<!-- second row of the navbar styled according to size of the display and can be adjusted -->
+<div class="row" style="font-family: Comic Sans MS; display: flex; " id="navbar">
+  <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2" style="text-align: center;"> <a href="index.html"> <img src="images\icon\home.png" class="img-fluid" alt="..."> HOME</a></div>
+  <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2" style="text-align: center;"> <a href="cart.html"> <img src="images\icon\cart.png" class="img-fluid" alt="..."> MY CART</a></div>
+  <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2" style="text-align: center;"> <a href="doctor.html"> <img src="images\icon\doctor.png" class="img-fluid" alt="..."> MEDICAL</a></div>
+  <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2" style="text-align: center;"> <a href="alerts.html"> <img src="images\icon\bell.png" class="img-fluid" alt="..."> ALERTS</a></div>
+  <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2" style="text-align: center;"> <a href="paisa laya/payment_form.html"> <img src="images\icon\payment.png" class="img-fluid" alt="..."> PAYMENTS</a></div>
+  <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2" style="text-align: center;"> <a href="profile.html"> <img src="images\icon\profile.png" class="img-fluid" alt="..."> MY PROFILE</a></div>
+</div>
+</div>
+<!-- announcements made by us in an alert format....also can be removed bt the user -->
+
+<div class="container-fluid" id="homebody">
+    <div class="row">
+      <!-- items in a column format with main discription -->
+        <div class="col-md-4"> <a href="sofa1.html"><img src="images\Animal sofa\folder1\1.png" class="img-fluid" alt="1"><p style="text-align: center;"> <b>Melliflous Reversible velvet</b><br> brown cream<br><i>₹459.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="sofa2.html"><img src="images\Animal sofa\folder2\a.png" class="img-fluid" alt="2"><p style="text-align: center;"> <b>ROUND BOLSTER DOG BED</b> <br> BROWN <br> <i>₹999.00</i></p></a></div>
+        <div class="col-md-4"> <a href="sofa3.html"><img src="images\Animal sofa\folder3\sumit.png" class="img-fluid" alt="3"><p style="text-align: center;"><b>ELITE DOG/CAT BED</b> <br> orange/black <br><i>₹1249.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="bowl1.html"><img src="images\feeding item\bowl-1\u.png" class="img-fluid" alt=""><p style="text-align: center;"><b>Stainless steel bowl </b><br> medium 700ml <br><i>₹199.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="bowl2.html"><img src="images\feeding item\bowl-2\b.png" class="img-fluid" alt=""><p style="text-align: center;"> <b>empire steel bowl</b> <br> medium 700ml  <br><i>₹192.00 </i></p></a></div>
+        <div class="col-md-4"> <a href="bowl3.html"><img src="images\feeding item\bowl-3\p.png" class="img-fluid" alt=""><p style="text-align: center;"> <b>coloured feeding bowl</b><br> small 400ml black <br><i>₹369.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="food1.html"><img src="images\food\item-1\m.png" class="img-fluid" alt=""><p style="text-align: center;"><b>meet up biscuits </b><br>chicken flavour <br><i>₹229.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="food2.html"><img src="images\food\item2\p.png" class="img-fluid" alt=""><p style="text-align: center;"><b>pedigree</b><br> 900g chicken flavour <br><i>₹238.00</i></p></a></div>
+        <div class="col-md-4"> <a href="food3.html"><img src="images\food\item3\b.png" class="img-fluid" alt=""><p style="text-align: center;"><b>pressed chew bones</b> <br>pack of 4 , 4 inch<br><i>₹180.00</i></p></a></div>
+        <div class="col-md-4"> <a href="leash1.html"><img src="images\pet leash\leash1\leash1home.png" class="img-fluid" alt="leash image"><p style="text-align: center;"><b>munchos Nylon </b> <br>10MM collar set  <br><i>₹234.00</i></p></a></div>
+        <div class="col-md-4"> <a href="leash2.html"><img src="images\pet leash\leash2\leash2home.png" class="img-fluid" alt="leash image"><p style="text-align: center;"><b>cat harness</b> <br>nylon set for cat(red)<br><i>₹269.00</i></p></a></div>
+        <div class="col-md-4"> <a href="leash3.html"><img src="images\pet leash\leash3\leash3home.png" class="img-fluid" alt="leash image"><p style="text-align: center;"><b>fur padded nylon harness</b><br>1inch leash rope<br><i>₹399</i></p></a></div>
+        <div class="col-md-4"> <a href="toy1.html"><img src="images\animal toys\toy1\toy1home.png" class="img-fluid" alt="toy image"><p style="text-align: center;"><b> dental puppy teething </b><br> spike chew toy-6inch <br><i>₹175.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="toy2.html"><img src="images\animal toys\toy2\toy2home.png" class="img-fluid" alt="toy image"><p style="text-align: center;"><b> natural rubber spike ball </b><br>dog chew toy-3inch<br><i>₹175.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="toy3.html"><img src="images\animal toys\toy3\toy3home.png" class="img-fluid" alt="toy image"><p style="text-align: center;"><b> pets company flyer </b><br>rubber frisbee-9inch<br><i>₹287.00</i></p></a></div>
+        <div class="col-md-4"> <a href="toy4.html"><img src="images\animal toys\toy4\toy4home.png" class="img-fluid" alt="toy image"><p style="text-align: center;"><b> kong wobbler </b><br>small dog toy<br><i>₹1340.00</i> </p></a></div>
+        <div class="col-md-4"> <a href="toy5.html"><img src="images\animal toys\toy5\toy5home.png" class="img-fluid" alt="toy image"><p style="text-align: center;"><b> nina outtoson outward </b><br>hound dog puzzle<br><i>₹1872.00</i></p></a></div>
+        <div class="col-md-4"> <a href="toy6.html"><img src="images\animal toys\toy6\toy6home.png" class="img-fluid" alt="toy image"><p style="text-align: center;"><b> meet up chew </b><br>non toxic rubber<br><i>₹179.00</i></p></a></div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+  <div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">ABOUT THE WEBSITE</h3>
+    <p class="w3-center w3-large">Key features of our WEBSITE</p>
+    <div class="w3-row-padding w3-center" >
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Responsive</p>
+        <p>This is a responsive website which is visually appealing, functional, and usable no matter what device the consumer is accessing it from. </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Passion</p>
+        <p>we are passionate to do social work and following that we have started dogekart in which all the extra revenue we make goes to charity for the sake of humanity</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Design</p>
+        <p>while designing this website user interface was the main focus because experience of a user is what matters to us the most , we have made website look like our legendary logo in same color shades. we hope you will like it</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Support</p>
+        <p>Our customer care department will be always available for you , to listen to your quary , to assist and guide you , and to process your special requests</p>
+      </div>
+    </div>
+  </div>
+</body>
+  <!-- ADDING INFO ABOUT US AND OUR PROJECT -->
+  <footer>
+    <div class="container-fluid bg-dark" id="footer">
+      <div class="row" style="font-family: Comic Sans MS; color: snow;">
+        <div class="col"><p>ABOUT DOGESHOP: <p style="font-size:10px;"> dogeshop is a non profitable org. we work only for benfit of the society and only take 10% of the profit to keep our services running.</p></p></div>
+        <div class="col"><p>dogeshops:<p><ul style="font-size:10px;"><li>dogeshop for pets</li><li>dogeshop for students(coming soon)</li></ul></p></p></div>
+        <div class="col"><p><a href="team.html" style="color: snow;">TEAM:</a><p><ul style="font-size:10px;"><li>sumit kumar</li><li>sachin sharma</li><li>himani shree</li><li>anshuman singh</li></ul></p></p></div>
+        <div class="col">
+          <div class="row"><p style="text-align: center;"> FIND US ON</p></div>
+          <div class="row">
+            <div class="col"><a href="https://twitter.com/dogecoin"><img src="images\icon\twitter.png" class="img-fluid" alt=""></a></div>
+            <div class="col"><a href="https://www.reddit.com/r/doge/"><img src="images\icon\reddit.png" class="img-fluid" alt=""></a></div>
+            <div class="col"><a href="https://be.linkedin.com/company/dogeorg"><img src="images\icon\linkedin.png" class="img-fluid" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</html>
