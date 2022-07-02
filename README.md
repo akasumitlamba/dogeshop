@@ -14,5 +14,6 @@ click on dogeshop or home icon on top of any page it will redirect you to the in
 
 ![image](https://user-images.githubusercontent.com/85924848/177016177-c1ec8888-efce-4915-8ea4-e649dc8adfae.png)
 
-
 ![image](https://user-images.githubusercontent.com/85924848/177016227-5edc3036-8ea8-42c8-a236-928577c4e57c.png)
+
+![image](https://user-images.githubusercontent.com/85924848/177016253-8da1e585-a3a1-4b8c-a5aa-2a07b72dd311.png)
