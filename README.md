@@ -2,8 +2,8 @@
 open source front end project for a pet e-commerce website
 you can contribute to make certain pages / animations .
 just keep the colour theme in mind with the glossy look .
-add whatever you need or think is necessary 😉 all contributions are
-Appreciated.
+add whatever you need or think is necessary 😉 
+All contributions are Appreciated.
 
 you can click on any page to get started .
 start by downloading the zip file and extract it on any path
