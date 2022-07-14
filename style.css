@@ -52,7 +52,6 @@ footer{
 .socials a i{
     font-size: 1.1rem;
     transition: color .4s ease;
-
 }
 .socials a:hover i{
     color: aqua;
