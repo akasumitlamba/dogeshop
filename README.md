@@ -12,6 +12,7 @@ directly run it on microsoft edge, chrome ,firefox or any other browser.
 click on dogeshop or home icon on top of any page it will redirect you to the index.html (prefered overview)
 
 
+
 ![image](https://user-images.githubusercontent.com/85924848/177016177-c1ec8888-efce-4915-8ea4-e649dc8adfae.png)
 
 
